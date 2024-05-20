@@ -1,1 +1,4 @@
-123
+
+a@a-virtual-machine:~/blockbench/benchmark/quorum_pbft$ sudo ./init-all.sh 8
+init-all
+cat: /root/blockbench/benchmark/quorum_pbft/hosts: No such file or directory
