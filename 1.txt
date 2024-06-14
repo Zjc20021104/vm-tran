@@ -1,17 +1,14 @@
-a@a-virtual-machine:~/blockbench/benchmark/quorum_pbft$ ./run-bench.sh 16 16 8 16
-run-bench.sh
-ssh: connect to host 10.0.0.100 port 22: Connection refused
-done node 10.0.0.100
-ssh: connect to host 10.0.0.99 port 22: Connection refused
-done node 10.0.0.99
-ssh: connect to host 10.0.0.98 port 22: Connection refused
-done node 10.0.0.98
-ssh: connect to host 10.0.0.97 port 22: Connection refused
-done node 10.0.0.97
-ssh: connect to host 10.0.0.96 port 22: Connection refused
-done node 10.0.0.96
-ssh: connect to host 10.0.0.95 port 22: Connection refused
-done node 10.0.0.95
-ssh: connect to host 10.0.0.94 port 22: Connection refused
-done node 10.0.0.94
-lll
+sudo apt-get update
+sudo apt-get install -y build-essential gdb libssl-dev libcurl4-openssl-dev \
+    libprotobuf-dev rapidjson-dev curl python3-pip
+
+////
+
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys \
+    EB3E94ADBE1229CF
+sudo add-apt-repository \
+    "deb [arch=amd64] https://packages.microsoft.com/ubuntu/20.04/prod bionic main"
+/////
+sudo apt-get update
+sudo apt-get install -y open-enclave
+
