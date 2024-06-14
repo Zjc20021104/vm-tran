@@ -1,14 +1,1 @@
-sudo apt-get update
-sudo apt-get install -y build-essential gdb libssl-dev libcurl4-openssl-dev \
-    libprotobuf-dev rapidjson-dev curl python3-pip
-
-////
-
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys \
-    EB3E94ADBE1229CF
-sudo add-apt-repository \
-    "deb [arch=amd64] https://packages.microsoft.com/ubuntu/20.04/prod bionic main"
-/////
-sudo apt-get update
-sudo apt-get install -y open-enclave
-
+https://github.com/openenclave/openenclave.git
