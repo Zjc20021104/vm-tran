@@ -1,2 +1,27 @@
-export LLVM_DIR=/usr/lib/llvm-11
-export PATH=$LLVM_DIR/bin:$PATH
+a@a-Standard-PC-Q35-ICH9-2009:~/openenclave/build$ cmake ..
+-- Build type: Debug
+CMake Warning at cmake/compiler_settings.cmake:15 (message):
+  The GCC support on x86 platforms has been deprecated.  Build problems may
+  occur.  Consider using Clang instead.
+Call Stack (most recent call first):
+  CMakeLists.txt:334 (include)
+
+
+-- Not using CCache
+CMake Warning at cmake/compiler_settings.cmake:85 (message):
+  Spectre 1 mitigation NOT supported.
+Call Stack (most recent call first):
+  CMakeLists.txt:334 (include)
+
+
+-- Valgrind not found
+-- Looking for crypto library - found
+-- Looking for dl library - found
+CMake Error at 3rdparty/symcrypt_engine/CMakeLists.txt:124 (message):
+  Cannot find clang intrinstics header (required by SymCrypt OpenSSL engine)
+  in /usr/lib/llvm-11/lib/clang/11.4.0/include
+
+
+-- Configuring incomplete, errors occurred!
+See also "/home/a/openenclave/build/CMakeFiles/CMakeOutput.log".
+See also "/home/a/openenclave/build/CMakeFiles/CMakeError.log".
