@@ -1,2 +1,1 @@
-a@a-Standard-PC-Q35-ICH9-2009:~/openenclave/build$ export CLANG_INTRINSIC_HEADERS_DIR= /usr/lib/llvm-11/lib/clang/11.1.0/include
-bash: export: `/usr/lib/llvm-11/lib/clang/11.1.0/include': not a valid identifier
+set(CLANG_INTRINSIC_HEADERS_DIR ${CMAKE_CURRENT_BINARY_DIR}/include)
