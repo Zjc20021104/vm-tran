@@ -1,1 +1,51 @@
-set(CLANG_INTRINSIC_HEADERS_DIR ${CMAKE_CURRENT_BINARY_DIR}/include)
+a@a-Standard-PC-Q35-ICH9-2009:~/openenclave/build$ cmake ..
+-- Build type: Debug
+CMake Warning at cmake/compiler_settings.cmake:15 (message):
+  The GCC support on x86 platforms has been deprecated.  Build problems may
+  occur.  Consider using Clang instead.
+Call Stack (most recent call first):
+  CMakeLists.txt:334 (include)
+
+
+-- Not using CCache
+CMake Warning at cmake/compiler_settings.cmake:85 (message):
+  Spectre 1 mitigation NOT supported.
+Call Stack (most recent call first):
+  CMakeLists.txt:334 (include)
+
+
+-- Valgrind not found
+-- Looking for crypto library - found
+-- Looking for dl library - found
+clang: CLANG_INTRINSIC_HEADERS_DIR-NOTFOUND
+ENABLE_FULL_LIBCXX_TESTS not set - building some libcxx tests
+ENABLE_FULL_STRESS_TESTS not set - building some stress tests
+ENABLE_ZERO_BASE_TESTS set - building all 0-base enclave tests
+ENABLE_SYMCRYPT_OPENSSL_TESTS set - test OpenSSL with both default settings and SymCrypt engine
+Downloading https://dl-cdn.alpinelinux.org/alpine/v3.14/releases/x86_64/alpine-minirootfs-3.14.1-x86_64.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 2666k  100 2666k    0     0  2820k      0 --:--:-- --:--:-- --:--:-- 2818k
+Checking if unshare works...
+unshare works
+fetch https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/APKINDEX.tar.gz
+ERROR: https://dl-cdn.alpinelinux.org/alpine/v3.14/main: network error (check Internet connection and firewall)
+WARNING: Ignoring https://dl-cdn.alpinelinux.org/alpine/v3.14/main: No such file or directory
+fetch https://dl-cdn.alpinelinux.org/alpine/v3.14/community/x86_64/APKINDEX.tar.gz
+ERROR: https://dl-cdn.alpinelinux.org/alpine/v3.14/community: temporary error (try again later)
+WARNING: Ignoring https://dl-cdn.alpinelinux.org/alpine/v3.14/community: No such file or directory
+fetch https://dl-cdn.alpinelinux.org/alpine/edge/testing/x86_64/APKINDEX.tar.gz
+ERROR: https://dl-cdn.alpinelinux.org/alpine/edge/testing: temporary error (try again later)
+WARNING: Ignoring https://dl-cdn.alpinelinux.org/alpine/edge/testing: No such file or directory
+3 errors; 14 distinct packages available
+oeapkman configured to use `unshare`
+APKMAN_ROOT is /home/a/.oeapkman/alpine-fs-3.14.1-x86_64
+-- lld not found. thread_local_alignment tests require lld for lockdown alignment issues.
+-- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
+CMake Error at docs/refman/CMakeLists.txt:9 (message):
+  Doxygen not found! Skip generation with '-DENABLE_REFMAN=OFF'
+
+
+-- Configuring incomplete, errors occurred!
+See also "/home/a/openenclave/build/CMakeFiles/CMakeOutput.log".
+See also "/home/a/openenclave/build/CMakeFiles/CMakeError.log".
