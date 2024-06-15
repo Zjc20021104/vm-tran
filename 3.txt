@@ -1,10 +1,22 @@
-a@a-Standard-PC-Q35-ICH9-2009:~/openenclave/build$ sudo apt -y install clang-11 libssl-dev gdb libsgx-enclave-common libsgx-quote-ex libprotobuf17 libsgx-dcap-ql libsgx-dcap-ql-dev az-dcap-client open-enclave
-[sudo] password for a: 
+a@a-Standard-PC-Q35-ICH9-2009:~/openenclave/build$ sudo apt update
+Hit:4 http://security.ubuntu.com/ubuntu jammy-security InRelease                                       
+Hit:1 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy InRelease                                       
+Get:2 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-updates InRelease [128 kB]
+Hit:3 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-backports InRelease                             
+Get:6 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-updates/main amd64 Packages [1,730 kB]          
+Get:7 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-updates/main i386 Packages [642 kB]             
+Ign:8 https://packages.microsoft.com/ubuntu/20.04/prod bionic InRelease                                
+Get:9 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-updates/universe amd64 Packages [1,086 kB]      
+Get:10 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-updates/universe i386 Packages [707 kB]        
+Hit:11 https://packages.microsoft.com/ubuntu/20.04/prod focal InRelease                                
+Hit:12 https://packages.microsoft.com/repos/code stable InRelease                                      
+Hit:5 https://apt.llvm.org/focal llvm-toolchain-focal-11 InRelease                                     
+Err:13 https://packages.microsoft.com/ubuntu/20.04/prod bionic Release                     
+  404  Not Found [IP: 13.107.246.73 443]
+Hit:14 https://download.01.org/intel-sgx/sgx_repo/ubuntu focal InRelease
 Reading package lists... Done
-Building dependency tree... Done
-Reading state information... Done
-Package libprotobuf17 is not available, but is referred to by another package.
-This may mean that the package is missing, has been obsoleted, or
-is only available from another source
-
-E: Package 'libprotobuf17' has no installation candidate
+E: The repository 'https://packages.microsoft.com/ubuntu/20.04/prod bionic Release' does not have a Release file.
+N: Updating from such a repository can't be done securely, and is therefore disabled by default.
+N: See apt-secure(8) manpage for repository creation and user configuration details.
+W: http://apt.llvm.org/focal/dists/llvm-toolchain-focal-11/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
+W: https://download.01.org/intel-sgx/sgx_repo/ubuntu/dists/focal/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
