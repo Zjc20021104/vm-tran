@@ -1,0 +1,3 @@
+a@a-Standard-PC-Q35-ICH9-2009:~/openenclave/build$ sudo dmesg | grep -i sgx
+[    0.531937] sgx: EPC section 0x280000000-0x283ffffff
+[    0.532071] sgx: [Firmware Bug]: Unable to map EPC section to online node. Fallback to the NUMA node 0.
