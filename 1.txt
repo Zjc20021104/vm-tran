@@ -1,1 +1,16 @@
-https://github.com/openenclave/openenclave/blob/master/docs/GettingStartedDocs/Contributors/SGX1FLCGettingStarted.md
+a@a-Standard-PC-Q35-ICH9-2009:~/openenclave$ sudo scripts/ansible/install-ansible.sh
+Your Python3 version is 3.10
+Python version 3.10 is supported and will be used to install Ansible.
+Checking for locks...
+Hit:1 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy InRelease                                       
+Hit:2 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-updates InRelease                           
+Hit:3 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-backports InRelease
+Get:4 http://security.ubuntu.com/ubuntu jammy-security InRelease [129 kB]
+Ign:5 https://packages.microsoft.com/ubuntu/20.04/prod bionic InRelease
+Hit:6 https://packages.microsoft.com/repos/code stable InRelease
+Err:7 https://packages.microsoft.com/ubuntu/20.04/prod bionic Release
+  404  Not Found [IP: 2620:1ec:bdf::73 443]
+Reading package lists... Done                            
+E: The repository 'https://packages.microsoft.com/ubuntu/20.04/prod bionic Release' does not have a Release file.
+N: Updating from such a repository can't be done securely, and is therefore disabled by default.
+N: See apt-secure(8) manpage for repository creation and user configuration details.
