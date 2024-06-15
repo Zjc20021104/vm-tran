@@ -1,1 +1,425 @@
-2
+a@a-Standard-PC-Q35-ICH9-2009:~/openenclave/build$ sudo make
+[sudo] password for a: 
+[  0%] Built target oeedger8r-cpp
+[  0%] Built target oeedger8r_target
+[  0%] Built target gen_edl_headers_switchless
+[  0%] Built target gen_edl_headers_asym_keys
+[  0%] Built target gen_edl_headers_time
+[  0%] Built target gen_edl_headers_fcntl
+[  0%] Built target gen_edl_headers_poll
+[  0%] Built target gen_edl_headers_socket
+[  0%] Built target gen_edl_headers_utsname
+Consolidate compiler generated dependencies of target oehostverify
+[  0%] Building C object host/CMakeFiles/oehostverify.dir/__/common/sgx/tcbinfo.c.o
+In file included from /home/a/openenclave/common/sgx/tcbinfo.c:5:
+/home/a/openenclave/common/sgx/tcbinfo.c: In function ‘_read_tcb_info_common_fields’:
+/home/a/openenclave/include/openenclave/internal/raise.h:86:9: error: jump skips variable initialization [-Werror=jump-misses-init]
+   86 |         goto done;                                        \
+      |         ^~~~
+/home/a/openenclave/include/openenclave/internal/raise.h:169:13: note: in expansion of macro ‘OE_RAISE’
+  169 |             OE_RAISE(_result_);              \
+      |             ^~~~~~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:812:5: note: in expansion of macro ‘OE_CHECK’
+  812 |     OE_CHECK(_read_property_name_and_colon("version", itr, end));
+      |     ^~~~~~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:904:1: note: label ‘done’ defined here
+  904 | done:
+      | ^~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:845:14: note: ‘parsed_info_fmspc’ declared here
+  845 |     uint8_t* parsed_info_fmspc = OE_TCB_INFO_GET(parsed_info, fmspc);
+      |              ^~~~~~~~~~~~~~~~~
+In file included from /home/a/openenclave/common/sgx/tcbinfo.c:5:
+/home/a/openenclave/include/openenclave/internal/raise.h:86:9: error: jump skips variable initialization [-Werror=jump-misses-init]
+   86 |         goto done;                                        \
+      |         ^~~~
+/home/a/openenclave/include/openenclave/internal/raise.h:169:13: note: in expansion of macro ‘OE_RAISE’
+  169 |             OE_RAISE(_result_);              \
+      |             ^~~~~~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:812:5: note: in expansion of macro ‘OE_CHECK’
+  812 |     OE_CHECK(_read_property_name_and_colon("version", itr, end));
+      |     ^~~~~~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:904:1: note: label ‘done’ defined here
+  904 | done:
+      | ^~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:835:20: note: ‘parsed_info_next_update’ declared here
+  835 |     oe_datetime_t* parsed_info_next_update =
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/a/openenclave/common/sgx/tcbinfo.c:5:
+/home/a/openenclave/include/openenclave/internal/raise.h:86:9: error: jump skips variable initialization [-Werror=jump-misses-init]
+   86 |         goto done;                                        \
+      |         ^~~~
+/home/a/openenclave/include/openenclave/internal/raise.h:169:13: note: in expansion of macro ‘OE_RAISE’
+  169 |             OE_RAISE(_result_);              \
+      |             ^~~~~~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:812:5: note: in expansion of macro ‘OE_CHECK’
+  812 |     OE_CHECK(_read_property_name_and_colon("version", itr, end));
+      |     ^~~~~~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:904:1: note: label ‘done’ defined here
+  904 | done:
+      | ^~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:824:20: note: ‘parsed_info_issue_date’ declared here
+  824 |     oe_datetime_t* parsed_info_issue_date =
+      |                    ^~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/a/openenclave/common/sgx/tcbinfo.c:5:
+/home/a/openenclave/include/openenclave/internal/raise.h:86:9: error: jump skips variable initialization [-Werror=jump-misses-init]
+   86 |         goto done;                                        \
+      |         ^~~~
+/home/a/openenclave/include/openenclave/internal/raise.h:169:13: note: in expansion of macro ‘OE_RAISE’
+  169 |             OE_RAISE(_result_);              \
+      |             ^~~~~~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:813:5: note: in expansion of macro ‘OE_CHECK’
+  813 |     OE_CHECK(_read_integer(itr, end, &value));
+      |     ^~~~~~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:904:1: note: label ‘done’ defined here
+  904 | done:
+      | ^~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:845:14: note: ‘parsed_info_fmspc’ declared here
+  845 |     uint8_t* parsed_info_fmspc = OE_TCB_INFO_GET(parsed_info, fmspc);
+      |              ^~~~~~~~~~~~~~~~~
+In file included from /home/a/openenclave/common/sgx/tcbinfo.c:5:
+/home/a/openenclave/include/openenclave/internal/raise.h:86:9: error: jump skips variable initialization [-Werror=jump-misses-init]
+   86 |         goto done;                                        \
+      |         ^~~~
+/home/a/openenclave/include/openenclave/internal/raise.h:169:13: note: in expansion of macro ‘OE_RAISE’
+  169 |             OE_RAISE(_result_);              \
+      |             ^~~~~~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:813:5: note: in expansion of macro ‘OE_CHECK’
+  813 |     OE_CHECK(_read_integer(itr, end, &value));
+      |     ^~~~~~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:904:1: note: label ‘done’ defined here
+  904 | done:
+      | ^~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:835:20: note: ‘parsed_info_next_update’ declared here
+  835 |     oe_datetime_t* parsed_info_next_update =
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/a/openenclave/common/sgx/tcbinfo.c:5:
+/home/a/openenclave/include/openenclave/internal/raise.h:86:9: error: jump skips variable initialization [-Werror=jump-misses-init]
+   86 |         goto done;                                        \
+      |         ^~~~
+/home/a/openenclave/include/openenclave/internal/raise.h:169:13: note: in expansion of macro ‘OE_RAISE’
+  169 |             OE_RAISE(_result_);              \
+      |             ^~~~~~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:813:5: note: in expansion of macro ‘OE_CHECK’
+  813 |     OE_CHECK(_read_integer(itr, end, &value));
+      |     ^~~~~~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:904:1: note: label ‘done’ defined here
+  904 | done:
+      | ^~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:824:20: note: ‘parsed_info_issue_date’ declared here
+  824 |     oe_datetime_t* parsed_info_issue_date =
+      |                    ^~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/a/openenclave/common/sgx/tcbinfo.c:5:
+/home/a/openenclave/include/openenclave/internal/raise.h:86:9: error: jump skips variable initialization [-Werror=jump-misses-init]
+   86 |         goto done;                                        \
+      |         ^~~~
+/home/a/openenclave/include/openenclave/internal/raise.h:169:13: note: in expansion of macro ‘OE_RAISE’
+  169 |             OE_RAISE(_result_);              \
+      |             ^~~~~~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:819:5: note: in expansion of macro ‘OE_CHECK’
+  819 |     OE_CHECK(_read(',', itr, end));
+      |     ^~~~~~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:904:1: note: label ‘done’ defined here
+  904 | done:
+      | ^~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:845:14: note: ‘parsed_info_fmspc’ declared here
+  845 |     uint8_t* parsed_info_fmspc = OE_TCB_INFO_GET(parsed_info, fmspc);
+      |              ^~~~~~~~~~~~~~~~~
+In file included from /home/a/openenclave/common/sgx/tcbinfo.c:5:
+/home/a/openenclave/include/openenclave/internal/raise.h:86:9: error: jump skips variable initialization [-Werror=jump-misses-init]
+   86 |         goto done;                                        \
+      |         ^~~~
+/home/a/openenclave/include/openenclave/internal/raise.h:169:13: note: in expansion of macro ‘OE_RAISE’
+  169 |             OE_RAISE(_result_);              \
+      |             ^~~~~~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:819:5: note: in expansion of macro ‘OE_CHECK’
+  819 |     OE_CHECK(_read(',', itr, end));
+      |     ^~~~~~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:904:1: note: label ‘done’ defined here
+  904 | done:
+      | ^~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:835:20: note: ‘parsed_info_next_update’ declared here
+  835 |     oe_datetime_t* parsed_info_next_update =
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/a/openenclave/common/sgx/tcbinfo.c:5:
+/home/a/openenclave/include/openenclave/internal/raise.h:86:9: error: jump skips variable initialization [-Werror=jump-misses-init]
+   86 |         goto done;                                        \
+      |         ^~~~
+/home/a/openenclave/include/openenclave/internal/raise.h:169:13: note: in expansion of macro ‘OE_RAISE’
+  169 |             OE_RAISE(_result_);              \
+      |             ^~~~~~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:819:5: note: in expansion of macro ‘OE_CHECK’
+  819 |     OE_CHECK(_read(',', itr, end));
+      |     ^~~~~~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:904:1: note: label ‘done’ defined here
+  904 | done:
+      | ^~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:824:20: note: ‘parsed_info_issue_date’ declared here
+  824 |     oe_datetime_t* parsed_info_issue_date =
+      |                    ^~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/a/openenclave/common/sgx/tcbinfo.c:5:
+/home/a/openenclave/include/openenclave/internal/raise.h:86:9: error: jump skips variable initialization [-Werror=jump-misses-init]
+   86 |         goto done;                                        \
+      |         ^~~~
+/home/a/openenclave/include/openenclave/internal/raise.h:169:13: note: in expansion of macro ‘OE_RAISE’
+  169 |             OE_RAISE(_result_);              \
+      |             ^~~~~~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:822:5: note: in expansion of macro ‘OE_CHECK’
+  822 |     OE_CHECK(_read_property_name_and_colon("issueDate", itr, end));
+      |     ^~~~~~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:904:1: note: label ‘done’ defined here
+  904 | done:
+      | ^~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:845:14: note: ‘parsed_info_fmspc’ declared here
+  845 |     uint8_t* parsed_info_fmspc = OE_TCB_INFO_GET(parsed_info, fmspc);
+      |              ^~~~~~~~~~~~~~~~~
+In file included from /home/a/openenclave/common/sgx/tcbinfo.c:5:
+/home/a/openenclave/include/openenclave/internal/raise.h:86:9: error: jump skips variable initialization [-Werror=jump-misses-init]
+   86 |         goto done;                                        \
+      |         ^~~~
+/home/a/openenclave/include/openenclave/internal/raise.h:169:13: note: in expansion of macro ‘OE_RAISE’
+  169 |             OE_RAISE(_result_);              \
+      |             ^~~~~~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:822:5: note: in expansion of macro ‘OE_CHECK’
+  822 |     OE_CHECK(_read_property_name_and_colon("issueDate", itr, end));
+      |     ^~~~~~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:904:1: note: label ‘done’ defined here
+  904 | done:
+      | ^~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:835:20: note: ‘parsed_info_next_update’ declared here
+  835 |     oe_datetime_t* parsed_info_next_update =
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/a/openenclave/common/sgx/tcbinfo.c:5:
+/home/a/openenclave/include/openenclave/internal/raise.h:86:9: error: jump skips variable initialization [-Werror=jump-misses-init]
+   86 |         goto done;                                        \
+      |         ^~~~
+/home/a/openenclave/include/openenclave/internal/raise.h:169:13: note: in expansion of macro ‘OE_RAISE’
+  169 |             OE_RAISE(_result_);              \
+      |             ^~~~~~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:822:5: note: in expansion of macro ‘OE_CHECK’
+  822 |     OE_CHECK(_read_property_name_and_colon("issueDate", itr, end));
+      |     ^~~~~~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:904:1: note: label ‘done’ defined here
+  904 | done:
+      | ^~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:824:20: note: ‘parsed_info_issue_date’ declared here
+  824 |     oe_datetime_t* parsed_info_issue_date =
+      |                    ^~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/a/openenclave/common/sgx/tcbinfo.c:5:
+/home/a/openenclave/include/openenclave/internal/raise.h:86:9: error: jump skips variable initialization [-Werror=jump-misses-init]
+   86 |         goto done;                                        \
+      |         ^~~~
+/home/a/openenclave/include/openenclave/internal/raise.h:169:13: note: in expansion of macro ‘OE_RAISE’
+  169 |             OE_RAISE(_result_);              \
+      |             ^~~~~~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:823:5: note: in expansion of macro ‘OE_CHECK’
+  823 |     OE_CHECK(_read_string(itr, end, &date_str, &date_size));
+      |     ^~~~~~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:904:1: note: label ‘done’ defined here
+  904 | done:
+      | ^~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:845:14: note: ‘parsed_info_fmspc’ declared here
+  845 |     uint8_t* parsed_info_fmspc = OE_TCB_INFO_GET(parsed_info, fmspc);
+      |              ^~~~~~~~~~~~~~~~~
+In file included from /home/a/openenclave/common/sgx/tcbinfo.c:5:
+/home/a/openenclave/include/openenclave/internal/raise.h:86:9: error: jump skips variable initialization [-Werror=jump-misses-init]
+   86 |         goto done;                                        \
+      |         ^~~~
+/home/a/openenclave/include/openenclave/internal/raise.h:169:13: note: in expansion of macro ‘OE_RAISE’
+  169 |             OE_RAISE(_result_);              \
+      |             ^~~~~~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:823:5: note: in expansion of macro ‘OE_CHECK’
+  823 |     OE_CHECK(_read_string(itr, end, &date_str, &date_size));
+      |     ^~~~~~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:904:1: note: label ‘done’ defined here
+  904 | done:
+      | ^~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:835:20: note: ‘parsed_info_next_update’ declared here
+  835 |     oe_datetime_t* parsed_info_next_update =
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/a/openenclave/common/sgx/tcbinfo.c:5:
+/home/a/openenclave/include/openenclave/internal/raise.h:86:9: error: jump skips variable initialization [-Werror=jump-misses-init]
+   86 |         goto done;                                        \
+      |         ^~~~
+/home/a/openenclave/include/openenclave/internal/raise.h:169:13: note: in expansion of macro ‘OE_RAISE’
+  169 |             OE_RAISE(_result_);              \
+      |             ^~~~~~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:823:5: note: in expansion of macro ‘OE_CHECK’
+  823 |     OE_CHECK(_read_string(itr, end, &date_str, &date_size));
+      |     ^~~~~~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:904:1: note: label ‘done’ defined here
+  904 | done:
+      | ^~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:824:20: note: ‘parsed_info_issue_date’ declared here
+  824 |     oe_datetime_t* parsed_info_issue_date =
+      |                    ^~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/a/openenclave/common/sgx/tcbinfo.c:5:
+/home/a/openenclave/include/openenclave/internal/raise.h:86:9: error: jump skips variable initialization [-Werror=jump-misses-init]
+   86 |         goto done;                                        \
+      |         ^~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:829:9: note: in expansion of macro ‘OE_RAISE’
+  829 |         OE_RAISE(OE_JSON_INFO_PARSE_ERROR);
+      |         ^~~~~~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:904:1: note: label ‘done’ defined here
+  904 | done:
+      | ^~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:845:14: note: ‘parsed_info_fmspc’ declared here
+  845 |     uint8_t* parsed_info_fmspc = OE_TCB_INFO_GET(parsed_info, fmspc);
+      |              ^~~~~~~~~~~~~~~~~
+In file included from /home/a/openenclave/common/sgx/tcbinfo.c:5:
+/home/a/openenclave/include/openenclave/internal/raise.h:86:9: error: jump skips variable initialization [-Werror=jump-misses-init]
+   86 |         goto done;                                        \
+      |         ^~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:829:9: note: in expansion of macro ‘OE_RAISE’
+  829 |         OE_RAISE(OE_JSON_INFO_PARSE_ERROR);
+      |         ^~~~~~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:904:1: note: label ‘done’ defined here
+  904 | done:
+      | ^~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:835:20: note: ‘parsed_info_next_update’ declared here
+  835 |     oe_datetime_t* parsed_info_next_update =
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/a/openenclave/common/sgx/tcbinfo.c:5:
+/home/a/openenclave/include/openenclave/internal/raise.h:86:9: error: jump skips variable initialization [-Werror=jump-misses-init]
+   86 |         goto done;                                        \
+      |         ^~~~
+/home/a/openenclave/include/openenclave/internal/raise.h:169:13: note: in expansion of macro ‘OE_RAISE’
+  169 |             OE_RAISE(_result_);              \
+      |             ^~~~~~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:830:5: note: in expansion of macro ‘OE_CHECK’
+  830 |     OE_CHECK(_read(',', itr, end));
+      |     ^~~~~~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:904:1: note: label ‘done’ defined here
+  904 | done:
+      | ^~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:845:14: note: ‘parsed_info_fmspc’ declared here
+  845 |     uint8_t* parsed_info_fmspc = OE_TCB_INFO_GET(parsed_info, fmspc);
+      |              ^~~~~~~~~~~~~~~~~
+In file included from /home/a/openenclave/common/sgx/tcbinfo.c:5:
+/home/a/openenclave/include/openenclave/internal/raise.h:86:9: error: jump skips variable initialization [-Werror=jump-misses-init]
+   86 |         goto done;                                        \
+      |         ^~~~
+/home/a/openenclave/include/openenclave/internal/raise.h:169:13: note: in expansion of macro ‘OE_RAISE’
+  169 |             OE_RAISE(_result_);              \
+      |             ^~~~~~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:830:5: note: in expansion of macro ‘OE_CHECK’
+  830 |     OE_CHECK(_read(',', itr, end));
+      |     ^~~~~~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:904:1: note: label ‘done’ defined here
+  904 | done:
+      | ^~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:835:20: note: ‘parsed_info_next_update’ declared here
+  835 |     oe_datetime_t* parsed_info_next_update =
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/a/openenclave/common/sgx/tcbinfo.c:5:
+/home/a/openenclave/include/openenclave/internal/raise.h:86:9: error: jump skips variable initialization [-Werror=jump-misses-init]
+   86 |         goto done;                                        \
+      |         ^~~~
+/home/a/openenclave/include/openenclave/internal/raise.h:169:13: note: in expansion of macro ‘OE_RAISE’
+  169 |             OE_RAISE(_result_);              \
+      |             ^~~~~~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:833:5: note: in expansion of macro ‘OE_CHECK’
+  833 |     OE_CHECK(_read_property_name_and_colon("nextUpdate", itr, end));
+      |     ^~~~~~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:904:1: note: label ‘done’ defined here
+  904 | done:
+      | ^~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:845:14: note: ‘parsed_info_fmspc’ declared here
+  845 |     uint8_t* parsed_info_fmspc = OE_TCB_INFO_GET(parsed_info, fmspc);
+      |              ^~~~~~~~~~~~~~~~~
+In file included from /home/a/openenclave/common/sgx/tcbinfo.c:5:
+/home/a/openenclave/include/openenclave/internal/raise.h:86:9: error: jump skips variable initialization [-Werror=jump-misses-init]
+   86 |         goto done;                                        \
+      |         ^~~~
+/home/a/openenclave/include/openenclave/internal/raise.h:169:13: note: in expansion of macro ‘OE_RAISE’
+  169 |             OE_RAISE(_result_);              \
+      |             ^~~~~~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:833:5: note: in expansion of macro ‘OE_CHECK’
+  833 |     OE_CHECK(_read_property_name_and_colon("nextUpdate", itr, end));
+      |     ^~~~~~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:904:1: note: label ‘done’ defined here
+  904 | done:
+      | ^~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:835:20: note: ‘parsed_info_next_update’ declared here
+  835 |     oe_datetime_t* parsed_info_next_update =
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/a/openenclave/common/sgx/tcbinfo.c:5:
+/home/a/openenclave/include/openenclave/internal/raise.h:86:9: error: jump skips variable initialization [-Werror=jump-misses-init]
+   86 |         goto done;                                        \
+      |         ^~~~
+/home/a/openenclave/include/openenclave/internal/raise.h:169:13: note: in expansion of macro ‘OE_RAISE’
+  169 |             OE_RAISE(_result_);              \
+      |             ^~~~~~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:834:5: note: in expansion of macro ‘OE_CHECK’
+  834 |     OE_CHECK(_read_string(itr, end, &date_str, &date_size));
+      |     ^~~~~~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:904:1: note: label ‘done’ defined here
+  904 | done:
+      | ^~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:845:14: note: ‘parsed_info_fmspc’ declared here
+  845 |     uint8_t* parsed_info_fmspc = OE_TCB_INFO_GET(parsed_info, fmspc);
+      |              ^~~~~~~~~~~~~~~~~
+In file included from /home/a/openenclave/common/sgx/tcbinfo.c:5:
+/home/a/openenclave/include/openenclave/internal/raise.h:86:9: error: jump skips variable initialization [-Werror=jump-misses-init]
+   86 |         goto done;                                        \
+      |         ^~~~
+/home/a/openenclave/include/openenclave/internal/raise.h:169:13: note: in expansion of macro ‘OE_RAISE’
+  169 |             OE_RAISE(_result_);              \
+      |             ^~~~~~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:834:5: note: in expansion of macro ‘OE_CHECK’
+  834 |     OE_CHECK(_read_string(itr, end, &date_str, &date_size));
+      |     ^~~~~~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:904:1: note: label ‘done’ defined here
+  904 | done:
+      | ^~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:835:20: note: ‘parsed_info_next_update’ declared here
+  835 |     oe_datetime_t* parsed_info_next_update =
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/a/openenclave/common/sgx/tcbinfo.c:5:
+/home/a/openenclave/include/openenclave/internal/raise.h:86:9: error: jump skips variable initialization [-Werror=jump-misses-init]
+   86 |         goto done;                                        \
+      |         ^~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:840:9: note: in expansion of macro ‘OE_RAISE’
+  840 |         OE_RAISE(OE_JSON_INFO_PARSE_ERROR);
+      |         ^~~~~~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:904:1: note: label ‘done’ defined here
+  904 | done:
+      | ^~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:845:14: note: ‘parsed_info_fmspc’ declared here
+  845 |     uint8_t* parsed_info_fmspc = OE_TCB_INFO_GET(parsed_info, fmspc);
+      |              ^~~~~~~~~~~~~~~~~
+In file included from /home/a/openenclave/common/sgx/tcbinfo.c:5:
+/home/a/openenclave/include/openenclave/internal/raise.h:86:9: error: jump skips variable initialization [-Werror=jump-misses-init]
+   86 |         goto done;                                        \
+      |         ^~~~
+/home/a/openenclave/include/openenclave/internal/raise.h:169:13: note: in expansion of macro ‘OE_RAISE’
+  169 |             OE_RAISE(_result_);              \
+      |             ^~~~~~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:841:5: note: in expansion of macro ‘OE_CHECK’
+  841 |     OE_CHECK(_read(',', itr, end));
+      |     ^~~~~~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:904:1: note: label ‘done’ defined here
+  904 | done:
+      | ^~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:845:14: note: ‘parsed_info_fmspc’ declared here
+  845 |     uint8_t* parsed_info_fmspc = OE_TCB_INFO_GET(parsed_info, fmspc);
+      |              ^~~~~~~~~~~~~~~~~
+In file included from /home/a/openenclave/common/sgx/tcbinfo.c:5:
+/home/a/openenclave/include/openenclave/internal/raise.h:86:9: error: jump skips variable initialization [-Werror=jump-misses-init]
+   86 |         goto done;                                        \
+      |         ^~~~
+/home/a/openenclave/include/openenclave/internal/raise.h:169:13: note: in expansion of macro ‘OE_RAISE’
+  169 |             OE_RAISE(_result_);              \
+      |             ^~~~~~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:844:5: note: in expansion of macro ‘OE_CHECK’
+  844 |     OE_CHECK(_read_property_name_and_colon("fmspc", itr, end));
+      |     ^~~~~~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:904:1: note: label ‘done’ defined here
+  904 | done:
+      | ^~~~
+/home/a/openenclave/common/sgx/tcbinfo.c:845:14: note: ‘parsed_info_fmspc’ declared here
+  845 |     uint8_t* parsed_info_fmspc = OE_TCB_INFO_GET(parsed_info, fmspc);
+      |              ^~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+make[2]: *** [host/CMakeFiles/oehostverify.dir/build.make:356: host/CMakeFiles/oehostverify.dir/__/common/sgx/tcbinfo.c.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:9183: host/CMakeFiles/oehostverify.dir/all] Error 2
+make: *** [Makefile:166: all] Error 2
