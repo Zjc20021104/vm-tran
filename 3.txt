@@ -1,3 +1,10 @@
-a@a-Standard-PC-Q35-ICH9-2009:~/openenclave/build$ sudo dmesg | grep -i sgx
-[    0.531937] sgx: EPC section 0x280000000-0x283ffffff
-[    0.532071] sgx: [Firmware Bug]: Unable to map EPC section to online node. Fallback to the NUMA node 0.
+a@a-Standard-PC-Q35-ICH9-2009:~/openenclave/build$ sudo apt -y install clang-11 libssl-dev gdb libsgx-enclave-common libsgx-quote-ex libprotobuf17 libsgx-dcap-ql libsgx-dcap-ql-dev az-dcap-client open-enclave
+[sudo] password for a: 
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+Package libprotobuf17 is not available, but is referred to by another package.
+This may mean that the package is missing, has been obsoleted, or
+is only available from another source
+
+E: Package 'libprotobuf17' has no installation candidate
